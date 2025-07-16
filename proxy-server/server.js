@@ -514,6 +514,8 @@ app.use('/api/v1/*', async (req, res) => {
       url: apiUrl,
       headers,
       timeout: 30000, // 30 second timeout
+      maxContentLength: Infinity, // Remove content length limit
+      maxBodyLength: Infinity,    // Remove body length limit
     };
     
     // Handle request body for POST/PUT requests
@@ -608,6 +610,8 @@ app.post('/api/v1/openai-assistants-file/:identifier', upload.single('file'), as
           'Authorization': `Bearer ${config.flowiseApiKey}`,
           ...formData.getHeaders(),
         },
+        maxContentLength: Infinity, // Remove content length limit
+        maxBodyLength: Infinity,    // Remove body length limit
       }
     );
     
@@ -637,6 +641,8 @@ app.get('/api/v1/get-upload-file', async (req, res) => {
           'Authorization': `Bearer ${config.flowiseApiKey}`,
         },
         responseType: 'stream',
+        maxContentLength: Infinity, // Remove content length limit
+        maxBodyLength: Infinity,    // Remove body length limit
       }
     );
     
