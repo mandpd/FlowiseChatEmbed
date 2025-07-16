@@ -10,7 +10,7 @@
     {
       "identifier": "chatflow1",
       "chatflowId": "be29834a-84e7-45c1-ac5b-99adcc5fbcc3",
-      "debug": false,
+      "debug": true,
       "allowedDomains": [
         "http://localhost:51914",
         "http://localhost:3000",
