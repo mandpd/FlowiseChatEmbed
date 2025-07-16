@@ -1,0 +1,44 @@
+{
+  "apiHost": "https://flowise.lab.calstate.ai",
+  "flowiseApiKey": "7RMEegteSYkAGgzDWcCbQIt4UOOyXGQfEeQ-Xh8QrX4",
+  "oauthApiKey": "your-secure-api-key-here",
+  "oauthRedirectUri": "http://localhost:3005/oauth-callback.html",
+  "port": 3005,
+  "host": "0.0.0.0",
+  "chatflows": [
+    {
+      "identifier": "chatflow1",
+      "chatflowId": "be29834a-84e7-45c1-ac5b-99adcc5fbcc3",
+      "allowedDomains": [
+        "http://localhost:51914",
+        "http://localhost:3000",
+        "http://127.0.0.1:5678"
+      ],
+      "oauth": {
+        "mode": "required",
+        "clientId": "a3f47b20-9262-4c47-b885-41be1b0c4d56",
+        "authority": "https://login.microsoftonline.com/ae9a1f93-89ad-45f8-94b4-8629e935ab33/v2.0",
+        "scope": "openid profile email",
+        "responseType": "code",
+        "prompt": "select_account"
+      }
+    },
+    {
+      "identifier": "chatflow2",
+      "chatflowId": "0303cca8-9574-40af-9c6a-e2395be6b8ec",
+      "allowedDomains": [
+        "http://localhost:51914",
+        "http://localhost:3000",
+        "http://127.0.0.1:5678"
+      ],
+      "oauth": {
+        "mode": "required",
+        "clientId": "a3f47b20-9262-4c47-b885-41be1b0c4d56",
+        "authority": "https://login.microsoftonline.com/ae9a1f93-89ad-45f8-94b4-8629e935ab33/v2.0",
+        "scope": "openid profile email",
+        "responseType": "code",
+        "prompt": "select_account"
+      }
+    }
+  ]
+}
