@@ -5,10 +5,12 @@
   "oauthRedirectUri": "http://localhost:3005/oauth-callback.html",
   "port": 3005,
   "host": "0.0.0.0",
+  "debug": false,
   "chatflows": [
     {
       "identifier": "chatflow1",
       "chatflowId": "be29834a-84e7-45c1-ac5b-99adcc5fbcc3",
+      "debug": false,
       "allowedDomains": [
         "http://localhost:51914",
         "http://localhost:3000",
@@ -26,6 +28,7 @@
     {
       "identifier": "chatflow2",
       "chatflowId": "0303cca8-9574-40af-9c6a-e2395be6b8ec",
+      "debug": false,
       "allowedDomains": [
         "http://localhost:51914",
         "http://localhost:3000",
