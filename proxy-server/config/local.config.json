@@ -2,7 +2,7 @@
   "apiHost": "https://flowise.lab.calstate.ai",
   "flowiseApiKey": "7RMEegteSYkAGgzDWcCbQIt4UOOyXGQfEeQ-Xh8QrX4",
   "oauthApiKey": "your-secure-api-key-here",
-  "oauthRedirectUri": "http://localhost:3005/oauth-callback.html",
+  "oauthRedirectUri": "https://chatbot.lab.calstate.ai/oauth-callback.html",
   "port": 3005,
   "host": "0.0.0.0",
   "debug": false,
